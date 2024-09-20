@@ -1,0 +1,9 @@
+<div class="jumbotron">
+	<h3 class="lead"> List: </h3>
+	<ul>
+		<li *ngFor="let apartment of apartments">
+			<a [routerLink]="['/details',apartment.id]"> {{ apartment.description }} - ${{ apartment.price }} </a>
+	
+		</li>
+	</ul>
+</div>

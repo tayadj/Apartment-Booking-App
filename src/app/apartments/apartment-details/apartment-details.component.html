@@ -1,0 +1,9 @@
+<div class="jumbotron">
+	<div *ngIf="apartment">
+		<p class="lead"> You're looking at {{ apartment.description }} apartment with price of ${{ apartment.price }}</p>
+		<div style="display: flex;">
+			<button type="button" style="background-color: #b80f0a; border-color: #b80f0a; margin-right: 20px" class="btn btn-primary btn-sm" (click)="deleteApartment(apartment.id)">Delete</button>
+			<button type="button" class="btn btn-primary btn-sm" (click)="editApartment(apartment.id)">Change</button>
+		</div>
+	</div>
+</div>

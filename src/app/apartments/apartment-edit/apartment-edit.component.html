@@ -1,0 +1,14 @@
+<div class="jumbotron">
+	<div style="display: flex;">
+		<p class="lead" style="margin-right: 240px; margin-bottom: 10px">Editing</p>
+		<a routerLink="/main" class="btn btn-primary btn-sm" style="margin-bottom: 10px; margin-left: auto">Main</a>
+	</div>
+	
+	<form (submit)="addApartment()">
+		<div style="display: flex; flex-direction: column">	
+			<input class="form-control" style="margin-bottom: 4px" type="text" [(ngModel)]="newApartment.description" name="description" placeholder="Description" required>
+			<input class="form-control" style="margin-bottom: 4px" type="number" [(ngModel)]="newApartment.price" name="price" placeholder="Price" required>
+			<button type="submit" class="btn btn-primary">Add</button>
+		</div>
+	</form>
+</div>
